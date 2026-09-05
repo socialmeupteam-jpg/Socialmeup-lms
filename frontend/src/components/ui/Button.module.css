@@ -1,0 +1,102 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: background-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+}
+
+.button svg {
+  flex-shrink: 0;
+}
+
+.button:focus-visible {
+  outline: 2px solid #007991;
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.primary {
+  background-color: #007991;
+  color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: #005f72;
+}
+
+.primary:active:not(:disabled) {
+  background-color: #004d60;
+}
+
+.cta {
+  background-color: #ff9635;
+  color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.cta:hover:not(:disabled) {
+  background-color: #e67e22;
+}
+
+.outline {
+  background-color: #ffffff;
+  color: #007991;
+  border: 1px solid #007991;
+}
+
+.outline:hover:not(:disabled) {
+  background-color: #e0f6ff;
+}
+
+.ghost {
+  background: transparent;
+  color: #667085;
+}
+
+.ghost:hover:not(:disabled) {
+  background-color: #f2f4f6;
+  color: #1f2933;
+}
+
+.danger {
+  background-color: #ef4444;
+  color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.sm {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 12px;
+  gap: 6px;
+  border-radius: 8px;
+}
+
+.md {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 14px;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.lg {
+  height: 44px;
+  padding: 0 24px;
+  font-size: 16px;
+  gap: 10px;
+  border-radius: 12px;
+}

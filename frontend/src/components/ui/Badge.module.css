@@ -1,0 +1,92 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+
+.sm {
+  padding: 2px 8px;
+  font-size: 0.7rem;
+}
+
+.md {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.primary {
+  background-color: #e0f6ff;
+  color: #005f72;
+}
+
+.cta {
+  background-color: #fff3e6;
+  color: #e67e22;
+}
+
+.success {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.warning {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.info {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.neutral {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.teal {
+  background-color: #e6f4f6;
+  color: #005f72;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+}
+
+.dot_primary,
+.dot_teal {
+  background-color: #007991;
+}
+
+.dot_cta {
+  background-color: #ff9635;
+}
+
+.dot_success {
+  background-color: #10b981;
+}
+
+.dot_warning {
+  background-color: #f59e0b;
+}
+
+.dot_error {
+  background-color: #ef4444;
+}
+
+.dot_info {
+  background-color: #3b82f6;
+}
+
+.dot_neutral {
+  background-color: #9ca3af;
+}

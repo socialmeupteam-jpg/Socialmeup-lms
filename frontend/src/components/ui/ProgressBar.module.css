@@ -1,0 +1,57 @@
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.label {
+  font-size: 12px;
+  color: #667085;
+}
+
+.pct {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1f2933;
+}
+
+.track {
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.circular {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleFill {
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.circularLabel {
+  position: absolute;
+  text-align: center;
+}
+
+.circularValue {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f2933;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fill,
+  .circleFill {
+    transition: none;
+  }
+}
