@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { LmsProvider } from './context/LmsContext.jsx';
 import LoginPage from './pages/auth/LoginPage.jsx';
+import RegisterPage from './pages/auth/RegisterPage.jsx';
 
 const StudentDashboard = lazy(() => import('./pages/student/StudentDashboard.jsx'));
 
@@ -21,6 +22,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="/lms/student/dashboard" element={<StudentDashboardRoute />} />
       </Routes>
     </div>
