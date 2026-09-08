@@ -221,7 +221,7 @@ export default function LoginPage() {
 
           <p className={styles.footer}>
             Don&apos;t have an account?{' '}
-            <button type="button" className={styles.register}>
+            <button type="button" className={styles.register} onClick={() => navigate('/register')}>
               Register now
             </button>
           </p>

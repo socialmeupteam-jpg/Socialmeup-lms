@@ -44,3 +44,28 @@ export function getSession() {
 export function clearSession() {
   sessionStorage.removeItem(SESSION_KEY);
 }
+
+/**
+ * MOCK registration for the frontend-only stage.
+ * Returns a predictable success response without touching any backend.
+ * Replace with a real API call when backend auth is implemented.
+ */
+export async function registerAsRole(role, details) {
+  await delay(600);
+  const roleLabels = {
+    student: 'Student',
+    parent: 'Parent',
+    trainer: 'Trainer / Teacher',
+    admin: 'Admin',
+  };
+  const label = roleLabels[role] ?? 'Account';
+  return {
+    ok: true,
+    message:
+      label === 'Student'
+        ? 'Registration successful! You can now sign in with your credentials.'
+        : `Request submitted! The academy team will review your ${label} access request and contact you.`,
+    role,
+    details,
+  };
+}
